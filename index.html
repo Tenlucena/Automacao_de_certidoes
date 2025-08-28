@@ -9,5 +9,16 @@
     <h1>Certidões de empresas automáticas</h1>
     <label for="cnpj">CNPJ:</label>
     <input type="text" id="cnpj" name="cnpj" maxlength="18" placeholder="00.000.000/0000-00">
+    <button onclick="pegarCNPJ()">Salvar</button>
+
+    <script>
+      function pegarCNPJ() {
+        // pega o campo pelo id
+        let cnpj = document.getElementById("cnpj").value;
+        // agora a variável "cnpj" tem o valor digitado
+        console.log("CNPJ digitado:", cnpj); // mostra no console
+        alert("Você digitou: " + cnpj); // mostra na tela
+      }
+    </script>
   </body>
 </html>
